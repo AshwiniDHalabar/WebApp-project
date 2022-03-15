@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <style>
+        .my-form label{
+            display: block;
+        }
+        .container {
+            padding: 16px;
+        }
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="signin" method="post">
+        {% csrf_token %}
+    <div class="container">
+    <h2 align="center">Sign In</h2>
+    <label for="username"><b>UserName : </b></label>
+    <input type="text" name=""username" placeholder="username"><br><br>
+    <label for="password"><b>password : </b></label>
+    <input type="password" name="password" placeholder="password"><br><br>
+    <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+       
+</body>
+</html>

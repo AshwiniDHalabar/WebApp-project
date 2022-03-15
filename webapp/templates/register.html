@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>START PAGE</title>
+    <style>
+        
+        
+        h2{background-color: aliceblue;
+            color: black;
+            padding: 10px;
+        }
+        h2{
+            color:blue;
+        }
+    </style>
+    
+        
+</head>
+<body>
+    <form action="register" method="post">
+        {% csrf_token %}
+   
+    <h2>USER REGISTRATION</h2>
+    <p>Please fill in this form to create an account.</p>
+    <label for="firstname"><b>firstname : </b></label>
+    <input type="text" name="firstname" placeholder="FirstName"><br><br>
+    <label for="lastname"><b>lastname : </b></label>
+    <input type="text" name="lastname" placeholder="lastName"><br><br>
+    <label for="username"><b>UserName : </b></label>
+    <input type="text" name="username" placeholder="userName"><br><br>
+    <label for="email"><b>Email : </b></label>
+    <input type="email" name="email" placeholder="email"><br><br>
+    <label for="password"><b>password : </b></label>
+    <input type="password" name="password1" placeholder="Password"><br><br>
+    <label for="psw-repeat"><b>Confirm Password : </b></label>
+    <input type="password" name="password2" placeholder="Confirm Password"><br><br>
+    <input type="submit">
+        
+
+    </form>    
+    </form>
+</body>
+</html>
